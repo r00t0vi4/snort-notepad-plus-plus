@@ -1,0 +1,64 @@
+<NotepadPlus>
+    <UserLang name="Snort" ext="rules" udlVersion="2.1">
+        <Settings>
+            <Global caseIgnored="yes" allowFoldOfComments="no" foldCompact="no" forcePureLC="0" decimalSeparator="0" />
+            <Prefix Keywords1="no" Keywords2="no" Keywords3="no" Keywords4="no" Keywords5="no" Keywords6="no" Keywords7="no" Keywords8="no" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Comments">00# 01 02 03 04</Keywords>
+            <Keywords name="Numbers, prefix1"></Keywords>
+            <Keywords name="Numbers, prefix2"></Keywords>
+            <Keywords name="Numbers, extras1"></Keywords>
+            <Keywords name="Numbers, extras2"></Keywords>
+            <Keywords name="Numbers, suffix1"></Keywords>
+            <Keywords name="Numbers, suffix2"></Keywords>
+            <Keywords name="Numbers, range"></Keywords>
+            <Keywords name="Operators1">- &quot; ( ) . : ; [ ] &lt; &gt;</Keywords>
+            <Keywords name="Operators2"></Keywords>
+            <Keywords name="Folders in code1, open"></Keywords>
+            <Keywords name="Folders in code1, middle"></Keywords>
+            <Keywords name="Folders in code1, close"></Keywords>
+            <Keywords name="Folders in code2, open"></Keywords>
+            <Keywords name="Folders in code2, middle"></Keywords>
+            <Keywords name="Folders in code2, close"></Keywords>
+            <Keywords name="Folders in comment, open"></Keywords>
+            <Keywords name="Folders in comment, middle"></Keywords>
+            <Keywords name="Folders in comment, close"></Keywords>
+            <Keywords name="Keywords1">alert log pass activate dynamic drop reject sdrop tcp ip udp icmp</Keywords>
+            <Keywords name="Keywords2">$EXTERNAL_NET !$EXTERNAL_NET $HOME_NET !$HOME_NET $HTTP_SERVERS !$HTTP_SERVERS $SIP_SERVERS !$SIP_SERVERS $SMTP_SERVERS !$SMTP_SERVERS $SNMP_SERVERS !$SNMP_SERVERS $SQL_SERVERS !$SQL_SERVERS $SSH_SERVERS !$SSH_SERVERS $TELNET_SERVERS !$TELNET_SERVERS</Keywords>
+            <Keywords name="Keywords3">msg reference gid sid rev classtype priority metadeta content uricontent nocase threshold type limit track limit by_src by_dst count seconds distance within depth offset rawbytes http_client_body http_cookie http_raw_cookie http_header http_raw_header http_method http_uri http_raw_uri http_stat_code http_stat_msg http_encode fast_pattern urilen isdataat pcre pkt_data file_data base64_decode base64_data byte_test byte_jump byte_extract ftpbounce asn1 cvs dce_iface dce opnum dce_stub_data sip_method sip_stat_code sip_header sip_body gtp_type gtp_info gtp_version ssl_version ssl_state fragoffset ttl tos id ipopts fragbits dsize flags flow flowbits seq ack window itype icode icmp_id icmp_seq rpc ip_proto sameip stream_reassemble stream_size logto session resp react tag activates activated_by replace detection_filter metadata</Keywords>
+            <Keywords name="Keywords4">any</Keywords>
+            <Keywords name="Keywords5">$HTTP_PORTS !$HTTP_PORTS $ORACLE_PORTS !$ORACLE_PORTS $SHELLCODE_PORTS !$SHELLCODE_PORTS $SIP_PORTS !$SIP_PORTS $SNORT_BPF !$SNORT_BPF $SSH_PORTS !$SSH_PORTS</Keywords>
+            <Keywords name="Keywords6"></Keywords>
+            <Keywords name="Keywords7"></Keywords>
+            <Keywords name="Keywords8"></Keywords>
+            <Keywords name="Delimiters">00&quot;| 01 02|&quot; 03&quot; 04 05&quot; 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23</Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" fgColor="484848" bgcolor="FFFFFF" colorStyle="1" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="COMMENTS" fgColor="000000" bgcolor="FFFFFF" colorStyle="1" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="LINE COMMENTS" fgColor="808080" bgcolor="FFFFFF" colorStyle="1" fontName="" fontStyle="3" nesting="0" />
+            <WordsStyle name="NUMBERS" fgColor="E67300" bgcolor="FFFFFF" colorStyle="1" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS1" fgColor="800000" bgcolor="FFFFFF" colorStyle="1" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS2" fgColor="004080" bgcolor="FFFFFF" colorStyle="1" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS3" fgColor="004080" bgcolor="FFFFFF" colorStyle="1" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS4" fgColor="606060" bgcolor="FFFFFF" colorStyle="1" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS5" fgColor="606060" bgcolor="FFFFFF" colorStyle="1" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS6" fgColor="000000" bgcolor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS7" fgColor="000000" bgcolor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS8" fgColor="000000" bgcolor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="OPERATORS" fgColor="800000" bgcolor="FFFFFF" colorStyle="1" fontName="@Adobe Gothic Std B" fontStyle="1" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE1" fgColor="000000" bgcolor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE2" fgColor="000000" bgcolor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="000000" bgcolor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS1" fgColor="E67300" bgcolor="FFFFFF" colorStyle="1" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="DELIMITERS2" fgColor="E67300" bgcolor="FFFFFF" colorStyle="1" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="DELIMITERS3" fgColor="E67300" bgcolor="FFFFFF" colorStyle="1" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="DELIMITERS4" fgColor="E67300" bgcolor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="DELIMITERS5" fgColor="000000" bgcolor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS6" fgColor="000000" bgcolor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS7" fgColor="000000" bgcolor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS8" fgColor="000000" bgcolor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>
